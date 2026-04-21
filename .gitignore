@@ -1,0 +1,14 @@
+# Rust compilation artifacts
+/target/
+Cargo.lock
+
+# WebAssembly pack outputs
+/pkg/
+
+# Mac System Files
+.DS_Store
+
+# Editor Settings
+.vscode/
+.idea/
+*.swp
