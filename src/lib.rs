@@ -1,5 +1,5 @@
-use wasm_bindgen::prelude::*;
 use std::collections::HashMap;
+use wasm_bindgen::prelude::*;
 
 // This struct will be exported to JavaScript
 #[wasm_bindgen]
@@ -12,8 +12,8 @@ impl FastBPETokenizer {
     // Constructor called from JS: const tokenizer = new FastBPETokenizer();
     #[wasm_bindgen(constructor)]
     pub fn new() -> FastBPETokenizer {
-        FastBPETokenizer { 
-            vocab: HashMap::new() 
+        FastBPETokenizer {
+            vocab: HashMap::new(),
         }
     }
 
@@ -22,6 +22,6 @@ impl FastBPETokenizer {
     pub fn tokenize(&self, text: &str) -> Vec<u32> {
         // TODO: Implement actual Byte-Pair Encoding merge logic
         // Currently stubbed to return a 0 for every word
-        text.split_whitespace().map(|_| 0).collect() 
+        text.split_whitespace().map(|_| 0).collect()
     }
 }
