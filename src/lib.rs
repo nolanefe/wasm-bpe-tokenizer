@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+#![allow(clippy::new_without_default)]
 use std::collections::HashMap;
 use wasm_bindgen::prelude::*;
 
